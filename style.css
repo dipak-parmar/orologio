@@ -1,0 +1,873 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+/* body{
+    overflow-x: hidden;
+} */
+
+.splash {
+
+    width: 100%;
+    height: 100vh !important;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 11111; 
+}
+
+.loader {
+    width: fit-content;
+    font-size: 40px;
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff000000;
+    -webkit-text-stroke: 1px #ffffff;
+    background:
+        linear-gradient(-60deg, #ff000000 45%, #ffffff 0 55%, #ff000000 0) 0/300% 100% no-repeat text;
+    animation: l3 2s linear infinite;
+    z-index: 111;
+}
+
+.loader:before {
+    content: "Loading";
+}
+
+@keyframes l3 {
+    0% {
+        background-position: 100%
+    }
+}
+
+
+.firstbg {
+    background-color: black;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.firstpg img {
+    width: 90%;
+    object-fit: contain;
+}
+
+.firstpg {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    height: 92vh;
+}
+
+.firstpg h1 {
+    position: absolute;
+    top: -25px;
+    font-size: 33px;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+
+}
+
+.firstpg h2 {
+    position: absolute;
+    top: 120px;
+    font-size: 63px;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+    text-align: center;
+
+}
+
+.firstpg h3 {
+    position: absolute;
+    top: 90px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: white;
+    font-family: "Manrope", sans-serif;
+
+}
+
+.firstpg h2 span {
+    font-style: italic;
+}
+
+.firstpg p {
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    font-size: 15px;
+    color: white;
+    width: 500px;
+}
+
+.firstpg button {
+    position: absolute;
+    top: 600px;
+    right: 200px;
+    padding: 20px 50px;
+    border-radius: 50px;
+    background-color: #8d725b;
+    border: none;
+    color: white;
+    transition: .2s linear;
+}
+
+
+.firstpg button:hover {
+    background-color: black;
+    transition: .2s linear;
+
+}
+
+.navbar {
+    width: 85%;
+    display: flex;
+    position: absolute;
+    /* border: 2px solid white;  */
+    top: 10px;
+    left: 100px;
+
+}
+
+.navbar i {
+    color: white;
+    font-size: 30px;
+
+}
+
+.bagmore {
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    transition: .8s;
+
+}
+
+
+.bagmore h2 {
+    font-family: "Ibarra Real Nova", serif;
+    margin-top: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+
+}
+
+.bagmore h3 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 20px;
+    margin-left: 20px;
+
+
+}
+
+#cc {
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    font-size: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -2000px;
+    top: 0;
+    background-color: black;
+    transition: .8s;
+    overflow: auto !important;
+    z-index: 111111;
+}
+
+.menu1 {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu1 h3 {
+    font-size: 50px;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+
+}
+
+.menu2 {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.menu2 h4 {
+    font-size: 30px;
+    color: white;
+    font-family: "Ibarra Real Nova", serif;
+    font-style: italic;
+
+}
+
+.menu3 {
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 230px;
+
+}
+
+.menu3 img {
+    width: 70%;
+    object-fit: contain;
+
+}
+
+.carousel-item {
+    /* display: flex !important; */
+    width: 100%;
+    gap: 0px;
+    justify-content: center;
+    background-color: white;
+    align-self: center;
+}
+
+
+.carousel-item img {
+    width: 70%;
+}
+
+.secpg {
+    padding: 100px 0px 100px 0px;
+    position: relative;
+}
+
+.slidef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.carousel-item h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+
+
+}
+
+.carousel-item h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 70px;
+
+}
+
+.carousel-item p {
+    width: 80%;
+}
+
+.carousel-item button {
+    padding: 15px 40px;
+    border-radius: 50px;
+    background-color: #8d725b;
+    border: none;
+    color: white;
+    transition: .2s linear;
+}
+
+
+.carousel-item button:hover {
+    background-color: black;
+    transition: .2s linear;
+
+}
+
+.carousel-control-next {
+    margin-top: 500px;
+    margin-right: 200px;
+}
+
+.carousel-control-prev {
+    margin-top: 500px;
+    margin-left: 1100px;
+}
+
+.extra {
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.extra h1 {
+    font-size: 60px;
+    font-family: "Ibarra Real Nova", serif;
+
+}
+
+.extra h1 span {
+    font-style: italic;
+}
+
+
+.extra h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+}
+
+.three {
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.three1 {
+    width: 400px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    gap: 10px;
+}
+
+.three1 img {
+    width: 100%;
+}
+
+.three1 h3 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 22px;
+
+}
+
+.three1 h3 span {
+    font-style: italic;
+}
+
+.three1 h5 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.three1 h4 {
+    font-family: "Ibarra Real Nova", serif;
+
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+.fourpg h1 {
+    font-size: 100px !important;
+    font-family: "Ibarra Real Nova", serif;
+    font-weight: 100;
+    line-height: 100px;
+
+}
+
+.fourpg h1 span {
+    font-style: italic;
+
+}
+
+.fourpg {
+    width: 100% !important;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(img/image\ copy\ 2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.five2 img {
+    width: 90%;
+
+}
+
+.five1 p {
+    width: 350px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: .5px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.five {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.five p span {
+    color: gray;
+}
+
+v .five1 h3 {
+    font-size: 20px;
+    font-family: "Manrope", sans-serif;
+
+}
+
+.five1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sixpg {
+    background-color: #fbf6f1;
+    padding: 200px 0px 100px 400px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: -120px;
+
+}
+
+.sixpg h1 {
+    width: 1000px;
+    font-style: italic;
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 50px;
+}
+
+.sixpg p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sixpg span {
+    font-style: initial;
+}
+
+.carousel-control-prev {
+    color: black
+}
+
+.s .sev1 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border: 1px solid red;
+}
+
+
+.sev1 img {
+    width: 75%;
+}
+
+.sev2 {
+    width: 500px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    gap: 20px;
+    /* border: 1px solid red; */
+
+}
+
+.seven {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.seven h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+
+.seven p {
+    font-family: "Manrope", sans-serif;
+
+}
+
+.seven p span {
+    color: #8d725b;
+}
+
+.seven h3 {
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ------------ Laptop + Desktop ------------ */
+.eightbg {
+    width: 100%;
+    min-height: 390vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 40px 0;
+    background-image: url(img/image\ copy\ 15.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    position: relative;
+    background-attachment: fixed;
+       overflow: visible;
+
+}
+
+.eightpg h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 65px;
+    font-weight: 400;
+
+}
+
+.eightbg h3 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.eightpg {
+    text-align: center;
+    color: white;
+    max-width: 900px;
+    padding: 0 20px;
+    gap: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 2px !important;
+    right: 500px;
+    position: sticky;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+.eight {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.eight1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.eight-para {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.eight-watch {
+    width: 480px;
+    margin-top: 40px;
+}
+
+.eight-btn {
+    margin-top: 30px;
+    padding: 12px 35px;
+    background: #b19074;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.eight-help {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.ei1 {
+    width: 350px !important;
+    
+    left: 1100px;
+    position: sticky;
+
+}
+
+.ei1 img {
+    width: 100% !important;
+    position: absolute;
+    top: 800px;
+
+}
+
+
+.ei2 {
+    width: 350px !important;
+    right: 1100px;
+    position: sticky;
+}
+
+.ei2 img {
+    width: 100% !important;
+    position: absolute;
+    top: 1800px;
+}
+ 
+
+.ninebg{
+    height: 100vh;
+    background-image: url(img/download.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+
+.ninepg{
+    margin-top: 100px;
+      background-image: url(img/download.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.nine{
+    margin-top: 100px;
+    
+   
+}
+
+
+
+
+
+.nine2{
+    margin-top: 100px !important;
+    width: 600px !important;
+    width: 500px !important;
+
+}
+
+
+.ninepg h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 500;
+    margin-left: 80px;
+
+}
+
+.ninepg h1 span{
+    font-style: italic;
+}
+
+.ninebg h3 {
+    font-family: "Ibarra Real Nova", serif;
+    font-size:19px;
+    font-weight: 500;
+    width: 350px;
+    line-height: 30px;
+    margin-bottom: 50px;
+
+
+}
+
+
+.nn{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 350px;
+
+}
+
+.nn h3{
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+}
+
+.ninebg h3 span{
+    color: #b19074;
+}
+
+.nine1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: end;
+    align-items: end;
+
+}
+
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 60px 40px;
+    font-family: "Ibarra Real Nova", serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.footer-brand h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 22px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* bottom */
+.footer-bottom {
+    margin-top: 60px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer-policy {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-policy a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-policy a:hover {
+    color: #fff;
+}
+
+#side{
+    font-size: 30px;
+}
+/* ------------ Mobile View ------------ */
+@media (max-width: 600px) {
+
+    .eight1 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .eight-para {
+        font-size: 18px;
+    }
+
+    .eight-watch {
+        width: 260px;
+    }
+
+    .eight-btn {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+
+}
